@@ -4,7 +4,7 @@ FROM tomcat:7
 MAINTAINER kelvinTie "kelvintie@ideaculture.com"
 
 # 賦值war到目錄
-ADD  /home/git_source/cp_shorturl.war usr/local/tomcat/webapps/
+ADD  ./cp_shorturl.war /usr/local/tomcat/webapps/
 
 # 容器需要开放Tomcat 8080端口
 EXPOSE 8080
